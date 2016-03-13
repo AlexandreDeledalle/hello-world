@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<script src='jquery-2.2.0.min.js'></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<meta charset= 'UTF_8'>
+		<title> Identification </title>
+	</head>	
+	
+	<script>
+		$(document).ready(function(){
+			$("#plus").click(function(){
+				$( "#submit" ).before( "<div id='new'> Destinataire : <input type='text' name='nom'></div>" );
+			});
+			$("#moins").click(function(){
+				$( "#new" ).remove();
+			});
+			
+		
+		});
+
+	</script>
+	
+	<body>
+		<div class="box1">
+			
+					<p> Bonjour, veuillez sélectionner les personnes à qui vous voulez offrir des roses : </p>
+						
+						<form action="result.php" method="get">
+						Destinataire : <input type="text" name="nom" id="dest">
+							<br>
+						<input type="submit" value="Envoyer" id="submit">
+						</form>
+						
+						<button id="plus">ajouter un destinataire</button>
+						<button id="moins">enlever un destinataire</button><br>
+		</div>
+	</body>
+	
+</html>
