@@ -14,8 +14,12 @@ width: 500px;
 margin-left : 100px;
 margin-right: 105px;
 padding : 10px;
+<<<<<<< HEAD
 padding-left: 0px;
 
+=======
+border-radius : 10px;
+>>>>>>> origin/master
 }
 
 
